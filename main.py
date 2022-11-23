@@ -312,9 +312,9 @@ sid=""
 if temperature1>=23:
   sid="[室外温度较高，注意喝水哦]"
 elif temperature1<=17:
-  sid="[室外温度过低，记得多穿点衣服保暖]"
+  sid="[室外温度过低，记得多穿点衣服保暖，照顾好自己。]"
 else:
-  sid="[温度不高不低，但也要注意及时补水哦]"
+  sid="[温度不高不低，但也要注意及时补水哦，又是美好的一天]"
 
 #提醒吃饭
 now_time=int(time.localtime().tm_hour)
