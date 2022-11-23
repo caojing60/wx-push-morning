@@ -18,15 +18,15 @@ config_path=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 conf.read('config.conf','utf8')
 today = datetime.now()+timedelta(hours=8)+timedelta(hours=8)
 start_date =conf.get("info", "start_date")#在一起开始日期,格式 ****-**-**
-city1 = conf.get("info", "city1")              #所在的城市(请写具体城市，如昆明)，用于匹配天气预报和热点新闻
-city2 = conf.get("info", "city2")
-birthday_lover = conf.get("info", "birthday_lover")        #生日 格式**-**
-birthday_my= conf.get("info", "birthday_my")
-app_id = conf.get("info","app_id")   #微信测试号ID（开通以后自动生成）
-app_secret = conf.get("info","app_secret")#微信测试号密钥（开通以后自动生成）
-template_id =conf.get("info","template_id")
+city1 = 绵阳.get("info", "city1")              #所在的城市(请写具体城市，如昆明)，用于匹配天气预报和热点新闻
+city2 = 苍溪.get("info", "city2")
+birthday_lover = 02_17.get("info", "birthday_lover")        #生日 格式**-**
+birthday_my= 01_05.get("info", "birthday_my")
+app_id = wx8088715f50157d39.get("info","app_id")   #微信测试号ID（开通以后自动生成）
+app_secret = 55a987538f7d80208f51d8a453925535.get("info","app_secret")#微信测试号密钥（开通以后自动生成）
+template_id =oHG_55_IwmyW9tbGskHuIKeoXAaw.get("info","template_id")
 #接收消息的用户ID，让你的女朋友扫微信测试号的二维码，获取微信用户ID
-user_id = conf.get("info","user_id") #接收消息的微信号，注意这个不是普通微信号，需要扫微信测试号后台的二维码来获取
+user_id = oHG_55_IwmyW9tbGskHuIKeoXAaw.get("info","user_id") #接收消息的微信号，注意这个不是普通微信号，需要扫微信测试号后台的二维码来获取
 user_id1=user_id.split(",")
 print(type(user_id1))
 
@@ -379,8 +379,8 @@ for i in range(0,len(user_id1)):
 今日天气：{{weather1.DATA}} 
 当前温度：{{temperature1.DATA}} 
 {{sid.DATA}} 
-距离领导的生日还有{{birthday_lover.DATA}}天 
-距离秘书的生日还有{{birthday_my.DATA}}天 
+距离小琳生日还有{{birthday_lover.DATA}}天 
+距离小琳回家还有{{birthday_my.DATA}}天 
 距离元旦还有{{yd.DATA}}天 
 距离春节还有{{cj.DATA}}天 
 ===家乡:{{city2.DATA}} 天气:{{weather2.DATA}}=== 
